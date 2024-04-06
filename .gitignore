@@ -1,0 +1,14 @@
+.vscode/
+
+Makefile.options
+
+apple-tools/*.jar
+apple-tools/*.dsk
+
+build/
+dist/
+obj/
+
+altirra-*.ini
+AppleWin.log
+
