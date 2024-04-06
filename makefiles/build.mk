@@ -12,6 +12,7 @@
 APPLE_TOOLS_DIR := ./apple-tools
 
 CC := cl65
+CL := cl65
 
 SRCDIR := src
 BUILD_DIR := build
@@ -58,7 +59,7 @@ CFLAGS += --include-dir $(SRCDIR)
 # TARGETOBJDIR := $(OBJDIR)/$(CURRENT_TARGET)
 
 # allow for additional flags etc
--include ./custom.mk
+-include ./custom-$(CURRENT_PLATFORM).mk
 
 STATEFILE := Makefile.options
 -include $(STATEFILE)

@@ -1,7 +1,6 @@
 ###################################################################
 # Platform Mapping, OS specifics, and Emulator settings
 ###################################################################
-$(info sourcing os.mk)
 
 ifeq ($(CURRENT_TARGET),)
 $(error Missing value for CURRENT_TARGET)
@@ -41,15 +40,6 @@ endif
 
 COMMA := ,
 SPACE := $(N/A) $(N/A)
-
-ALTIRRA ?= $(ALTIRRA_HOME)/Altirra64.exe \
-  $(XS)/portable $(XS)/portablealt:altirra-debug.ini \
-
-#   $(XS)/debug \
-#   $(XS)/debugcmd: ".loadsym build\$(PROGRAM).$(CURRENT_TARGET).lbl" \
-#   $(XS)/debugcmd: "bp _debug" \
-
-atari_EMUCMD := $(ALTIRRA)
 
 PREEMUCMD :=
 POSTEMUCMD :=
