@@ -3,6 +3,8 @@
 # Set the TARGETS and PROGRAM values as required.
 # Put any custom settings into 'custom.mk' in root folder, e.g. additional LDFLAGS, AUTOSTART etc.
 
+# see makefiles/build.mk for details on directory structure for src files
+
 TARGETS = atari apple2
 PROGRAM := tgi-ex
 
